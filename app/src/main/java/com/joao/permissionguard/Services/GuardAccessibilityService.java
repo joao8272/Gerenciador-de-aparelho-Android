@@ -30,7 +30,7 @@ public class GuardAccessibilityService extends AccessibilityService {
         String unlockedApp = getSharedPreferences("lock_prefs", MODE_PRIVATE)
                 .getString("unlocked_app", null);
 
-        // Mudou de app → remove desbloqueio
+       
         if (unlockedApp != null && !currentPackage.equals(unlockedApp)) {
             getSharedPreferences("lock_prefs", MODE_PRIVATE)
                     .edit()
@@ -56,7 +56,7 @@ public class GuardAccessibilityService extends AccessibilityService {
     }
 
     private boolean isLauncher(String pkg) {
-        return pkg.equals("com.sec.android.app.launcher")   // Samsung
+        return pkg.equals("com.sec.android.app.launcher")   
                 || pkg.equals("com.android.launcher")
                 || pkg.contains("launcher");
     }
