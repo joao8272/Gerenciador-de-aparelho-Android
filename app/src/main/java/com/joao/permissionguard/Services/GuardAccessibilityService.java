@@ -62,7 +62,7 @@ public class GuardAccessibilityService extends AccessibilityService {
 
         SharedPreferences prefs = getSharedPreferences("lock_prefs", MODE_PRIVATE);
         String unlockedApp = prefs.getString("unlocked_app", null);
-        String unlockedBrowser = prefs.getString("unlocked_browser", null); // <- Verificação importante
+        String unlockedBrowser = prefs.getString("unlocked_browser", null); 
 
         if (lastPackage != null && !lastPackage.equals(currentPackage)) {
             lastWindowClass = null;
