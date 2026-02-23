@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Permission Guard</string>
-    <string name="accessibility_description">Serviço de acessibilidade do Permission Guard</string>
+    <string name="accessibility_description">Protege contra acesso não autorizado a apps e sites bloqueados</string>
 </resources>

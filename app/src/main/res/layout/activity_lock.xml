@@ -4,43 +4,65 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_lock"
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicativo não permitido"
-        android:textSize="18sp"
+        android:text="Acesso restrito"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Senha do administrador"
+        android:layout_height="52dp"
+        android:hint="Digite a senha do administrador"
         android:inputType="textPassword"
-        android:layout_marginBottom="16dp" />
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="#F0F0F0"
+        android:layout_marginBottom="24dp"
+        android:autofillHints="password" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
         <Button
             android:id="@+id/unlock"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Liberar"
-            android:layout_marginEnd="16dp" />
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/cancel"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Cancelar" />
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </LinearLayout>
