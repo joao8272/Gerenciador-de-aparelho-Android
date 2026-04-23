@@ -13,7 +13,7 @@ import com.joao.permissionguard.R;
 
 public class LockActivity extends AppCompatActivity {
 
-    private static final String ADMIN_PASSWORD = "892472";
+    private static final String ADMIN_PASSWORD = "***";
 
     public static boolean isLockActivityOpen = false;
 
